@@ -9,8 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyRecipes">
-        <activity android:name=".HomeActivity"></activity>
-        <activity android:name=".SplashActivity">
+        <activity
+            android:name=".ui.LoginActivity"
+            android:theme="@style/Theme.TranslucentStatusBar" />
+        <activity
+            android:name=".ui.SignUpActivity"
+            android:theme="@style/Theme.TranslucentStatusBar" />
+        <activity
+            android:name=".ui.WelcomeActivity"
+            android:theme="@style/Theme.WhiteStatusBar" />
+        <activity android:name=".ui.HomeActivity" />
+        <activity
+            android:name=".ui.SplashActivity"
+            android:theme="@style/Theme.WhiteStatusBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

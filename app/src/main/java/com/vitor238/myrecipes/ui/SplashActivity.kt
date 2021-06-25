@@ -1,10 +1,11 @@
-package com.vitor238.myrecipes
+package com.vitor238.myrecipes.ui
 
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
+import com.vitor238.myrecipes.R
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,7 +16,7 @@ class SplashActivity : AppCompatActivity() {
         handler.postDelayed({
             val intent = Intent(
                 this,
-                HomeActivity::class.java
+                WelcomeActivity::class.java
             )
             startActivity(intent)
             finish()

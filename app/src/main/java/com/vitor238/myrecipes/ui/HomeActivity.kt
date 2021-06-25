@@ -1,7 +1,8 @@
-package com.vitor238.myrecipes
+package com.vitor238.myrecipes.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.vitor238.myrecipes.R
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
