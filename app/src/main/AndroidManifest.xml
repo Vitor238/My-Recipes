@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyRecipes">
+        <activity android:name=".ui.base.BaseActivity" />
         <activity
             android:name=".ui.LoginActivity"
             android:theme="@style/Theme.TranslucentStatusBar" />
