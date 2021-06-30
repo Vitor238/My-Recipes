@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
 import com.vitor238.myrecipes.R
 
 class SplashActivity : AppCompatActivity() {
@@ -14,10 +15,11 @@ class SplashActivity : AppCompatActivity() {
 
         val handler = Handler(Looper.getMainLooper())
         handler.postDelayed({
-            val intent = Intent(
-                this,
-                WelcomeActivity::class.java
-            )
+            val intent = if (FirebaseAuth.getInstance().currentUser != null) {
+                Intent(this, HomeActivity::class.java)
+            } else {
+                Intent(this, WelcomeActivity::class.java)
+            }
             startActivity(intent)
             finish()
         }, 3000)
