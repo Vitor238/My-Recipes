@@ -11,4 +11,5 @@
     <string name="type_your_email">Type your e mail</string>
     <string name="failed_to_register">Failed to register</string>
     <string name="failed_to_login">Failed to login</string>
+    <string name="logout">Log out</string>
 </resources>

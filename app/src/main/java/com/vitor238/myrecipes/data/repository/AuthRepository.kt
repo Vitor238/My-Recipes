@@ -26,6 +26,10 @@ class AuthRepository(private val application: Application) {
     val authenticated: LiveData<Boolean>
         get() = _authenticated
 
+    private var _loggedOut: MutableLiveData<Boolean> = MutableLiveData()
+    val loggedOut: LiveData<Boolean>
+        get() = _loggedOut
+
     fun register(name: String, email: String, password: String) {
         firebaseAuth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(
@@ -90,6 +94,11 @@ class AuthRepository(private val application: Application) {
                         Log.e(TAG, defaultMessage)
                     }
                 })
+    }
+
+    fun logout() {
+        firebaseAuth.signOut()
+        _loggedOut.value = true
     }
 
     companion object {
