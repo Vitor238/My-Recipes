@@ -11,15 +11,15 @@
         android:theme="@style/Theme.MyRecipes">
         <activity android:name=".ui.base.BaseActivity" />
         <activity
-            android:name=".ui.LoginActivity"
+            android:name=".ui.auth.LoginActivity"
             android:theme="@style/Theme.TranslucentStatusBar" />
         <activity
-            android:name=".ui.SignUpActivity"
+            android:name=".ui.auth.SignUpActivity"
             android:theme="@style/Theme.TranslucentStatusBar" />
         <activity
             android:name=".ui.WelcomeActivity"
             android:theme="@style/Theme.WhiteStatusBar" />
-        <activity android:name=".ui.HomeActivity" />
+        <activity android:name=".ui.home.HomeActivity" />
         <activity
             android:name=".ui.SplashActivity"
             android:theme="@style/Theme.WhiteStatusBar">

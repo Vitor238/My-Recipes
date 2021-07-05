@@ -12,4 +12,17 @@
     <string name="failed_to_register">Failed to register</string>
     <string name="failed_to_login">Failed to login</string>
     <string name="logout">Log out</string>
+    <string name="categories">Categories</string>
+    <string name="drinks">Drinks</string>
+    <string name="pasta">Pasta</string>
+    <string name="cakes_and_pies">Cakes and Pies</string>
+    <string name="desserts">Desserts</string>
+    <string name="salads_and_sauces">Salads and Sauces</string>
+    <string name="meats">Meats</string>
+    <string name="fish_and_seafood">Fish and Seafood</string>
+    <string name="soups">Soups</string>
+    <string name="snacks">Snacks</string>
+    <string name="other">Other</string>
+    <string name="latest_saved">Latest saved</string>
+    <string name="latest_recipe">latest recipe</string>
 </resources>

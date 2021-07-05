@@ -1,4 +1,4 @@
-package com.vitor238.myrecipes.ui
+package com.vitor238.myrecipes.ui.auth
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.vitor238.myrecipes.R
 import com.vitor238.myrecipes.databinding.ActivityLoginBinding
 import com.vitor238.myrecipes.ui.base.BaseActivity
+import com.vitor238.myrecipes.ui.home.HomeActivity
 import com.vitor238.myrecipes.ui.viewmodel.AuthViewModel
 import com.vitor238.myrecipes.utils.text
 

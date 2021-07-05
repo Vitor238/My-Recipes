@@ -17,7 +17,6 @@
         </item>
     </style>
 
-
     <style name="CardViewCustomCorners" parent="@style/Widget.MaterialComponents.CardView">
         <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlayCardView</item>
     </style>
@@ -44,6 +43,13 @@
         <item name="cornerSizeTopLeft">16dp</item>
         <item name="cornerSizeBottomRight">0dp</item>
         <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+
+    <style name="Theme.FlatCardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardElevation">0dp</item>
+        <item name="cardCornerRadius">24dp</item>
+        <item name="cardPreventCornerOverlap">true</item>
+        <item name="strokeWidth">1dp</item>
     </style>
 
     <style name="TextAppearance.MdcTypographyStyles.Headline5.Cookie" parent="TextAppearance.MdcTypographyStyles.Headline5">

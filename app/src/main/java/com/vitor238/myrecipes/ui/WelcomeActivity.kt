@@ -4,6 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.vitor238.myrecipes.databinding.ActivityWelcomeBinding
+import com.vitor238.myrecipes.ui.auth.LoginActivity
+import com.vitor238.myrecipes.ui.auth.SignUpActivity
 
 class WelcomeActivity : AppCompatActivity() {
     private lateinit var binding: ActivityWelcomeBinding
