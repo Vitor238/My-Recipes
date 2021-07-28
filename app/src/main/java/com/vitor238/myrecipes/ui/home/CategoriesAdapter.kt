@@ -7,14 +7,14 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.vitor238.myrecipes.data.model.Category
-import com.vitor238.myrecipes.databinding.ItemCategorieBinding
+import com.vitor238.myrecipes.databinding.ItemCategoriesBinding
 
 class CategoriesAdapter(val onClickListener: (type: String) -> Unit) :
     ListAdapter<Category, CategoriesAdapter.CategoryViewHolder>(CategoriesDiffUtils()) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoryViewHolder {
         val binding =
-            ItemCategorieBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+            ItemCategoriesBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return CategoryViewHolder(binding)
     }
 
@@ -22,7 +22,7 @@ class CategoriesAdapter(val onClickListener: (type: String) -> Unit) :
         holder.bind(getItem(position))
     }
 
-    inner class CategoryViewHolder(binding: ItemCategorieBinding) :
+    inner class CategoryViewHolder(binding: ItemCategoriesBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
         private val textCategoryName = binding.textCategoryName

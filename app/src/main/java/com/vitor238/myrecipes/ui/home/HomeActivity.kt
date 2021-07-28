@@ -15,6 +15,7 @@ import com.vitor238.myrecipes.utils.Categories.CAKES_AND_PIES
 import com.vitor238.myrecipes.utils.Categories.DESSERTS
 import com.vitor238.myrecipes.utils.Categories.DRINKS
 import com.vitor238.myrecipes.utils.Categories.FISH_AND_SEAFOOD
+import com.vitor238.myrecipes.utils.Categories.LATEST
 import com.vitor238.myrecipes.utils.Categories.MEAT
 import com.vitor238.myrecipes.utils.Categories.OTHER
 import com.vitor238.myrecipes.utils.Categories.PASTA
@@ -43,6 +44,11 @@ class HomeActivity : BaseActivity() {
         }
 
         val list = listOf(
+            Category(
+                LATEST,
+                R.string.latest_saved,
+                R.drawable.shania_pinnata_unsplash
+            ),
             Category(
                 DRINKS,
                 R.string.drinks,

@@ -1,6 +1,7 @@
 package com.vitor238.myrecipes.utils
 
 object Categories {
+    const val LATEST = "latest"
     const val DRINKS = "drinks"
     const val PASTA = "pasta"
     const val CAKES_AND_PIES = "cakes_and_pies"
